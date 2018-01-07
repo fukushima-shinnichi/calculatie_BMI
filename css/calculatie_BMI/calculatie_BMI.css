@@ -1,0 +1,242 @@
+/****** PC css *****************/
+/****** ALL backimg*************/
+body {
+  background-image: url(img/backgraund.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255,255,255,0.4);
+}
+
+/******* start display ****************/
+div.mainPage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 980px;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.mainPage h1,.mainPage button{
+  font-family: 'Josefin Slab', serif;
+}
+
+.mainPage h1{
+  font-size: 100px;
+  margin: 50px 50px 120px 50px;
+  width: 880px;
+  text-align: center;
+  color: #fff;
+}
+
+.mainPage button{
+  display: block;
+  width: 440px;
+  border: none;
+  background-color: #dcdcdc;
+  padding: 0px;
+  margin: 0px 270px 50px 270px;
+  border-radius: 70px;
+  cursor: pointer;
+  font-size: 80px;
+  padding: 30px 0px;
+  color: #fff;
+}
+
+.mainPage button:hover,button#calculate:hover,div.BMI_calculate label b:hover{
+  background-color: #ffff00;
+  color: #000;
+}
+
+/******* BMI calculate page *********************/
+  /********** BMI calculate page ALL & BMI_result page *************/
+div.BMI_calculate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 980px;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: rgba(255,250,205,0.4);
+  border-radius: 30px;
+}
+
+  /***********  icon calculate page & result page  ******************/
+i.fa-times {
+  float: right;
+  font-size: 50px;
+  color: #fff;
+}
+
+p.close_icon {
+  margin: 0px;
+  margin-right: 10px;
+}
+
+i.fa-times:hover{
+  color: #ff0;
+}
+
+.BMI_calculate p,p.close_icon{
+  overflow: hidden;
+}
+
+  /*****  font caculate & result  ***************/
+div.BMI_calculate h3,div.BMI_calculate label b,button#calculate,div.BMI_result h3,div.result_comment p{
+  font-family: 'Josefin Slab', serif;
+}
+
+div.BMI_calculate h3,div.BMI_result h3{
+  font-size: 50px;
+  margin: 50px;
+  width: 880px;
+  text-align: center;
+  color: #fff;
+}
+
+div.BMI_calculate label,i.fa-times{
+  cursor: pointer;
+}
+
+  /******  radio button  **************************/
+div.BMI_calculate label b{
+  font-size: 30px;
+  color: #fff;
+  border-radius: 12px;
+}
+
+div.gender_enter{
+  text-align: center;
+  margin: auto;
+}
+
+    /*******  input stature & weight  ********************/
+div.other_enter input{
+  margin: 25px auto;
+}
+
+.other_enter input{
+  display: block;
+}
+
+.other_enter input::-webkit-input-placeholder{
+  color: aqua;
+  text-align: center;
+}
+
+  /**********  start culate button  ***********************/
+button#calculate{
+  width: 440px;
+  background-color: #dcdcdc;
+  margin: 0px 270px 50px 270px;
+  padding: 50px 0px;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 70px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*****  BMI result page  ***************************/
+div.BMI_result {
+  margin: 50px auto;
+  width: 980px;
+  background-color: rgba(255,250,205,0.4);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+div.BMI_image_photo{
+  margin-bottom: 50px;
+}
+
+.BMI_image_photo img{
+  width: 880px;
+  margin: 0px 50px;
+}
+
+div.result_comment p{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 400px;
+  margin: 0px auto 25px auto;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+div.result_comment p:last-child{
+  margin-bottom: 50px;
+}
+
+div.result_comment p:hover{
+  border-radius: 25.5px;
+  background-color: #ff0;
+  color: #000;
+}
+
+div.result_comment p:last-child{
+  cursor: pointer;
+}
+
+/***** BMI calculate page & BMI result page CLOSE ******************/
+div.BMI_calculate,div.BMI_result{
+  display: none;
+}
+
+/*************  smart phone css  **********************************/
+@media screen and (max-width:767px){
+  
+  /******* start display ****************/
+  div.mainPage{
+    width: 365px;
+  }
+  
+  .mainPage h1{
+    font-size: 80px;
+    margin: 50px 0px;
+    padding: 0px;
+    width: 365px;
+  }
+
+  .mainPage button{
+    width: 265px;
+    margin: 0px 50px;
+  }
+
+  /******* BMI calculate page *********************/
+    /********** BMI calculate page ALL & BMI_result page *************/
+  div.BMI_calculate {
+    width: 325px;
+  }
+
+    /*****  font caculate & result  ***************/
+  div.BMI_calculate h3,div.BMI_result h3{
+    width: 305px;
+    margin: 50px 10px;
+    line-height: 110%;
+  }
+
+    /**********  start culate button  ***********************/
+  button#calculate{
+    width: 265px;
+    margin: 0px 30px 50px 30px;
+  }
+
+  /*****  BMI result page  ***************************/
+  div.BMI_result {
+    width: 325px;
+  }
+
+  .BMI_image_photo img{
+    width: 305px;
+    margin: 0px 10px;
+  }
+
+  div.result_comment p{
+    width: 265px;
+    margin: 0px 30px 25px 30px;
+  }
+
+}

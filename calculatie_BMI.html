@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BMI算出サイト</title>
+<meta name="description" content="BMI算出サイト HTML,CSS,jQueryを使いBMI算出サイトを作ってみました">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+<link rel="stylesheet" href="css/calculatie_BMI/calculatie_BMI.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="jQuery_base/jquery-3.2.1.min.js"></script>
+<script src="jQuery_base/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/calculatie_BMI/calculatie_BMI.js"></script>
+</head>
+<body>
+    <!-------  start display  ------------------>
+    <div class="mainPage">
+      <h1>Calculate BMI</h1>
+      <button id="start">start</button>
+    </div>
+
+    <!---------   BMI calculate page   --------------->
+    <div class="BMI_calculate">
+      <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+      <h3>input your health information</h3>
+      <form>
+        <div class="gender_enter">
+          <label><input type="radio" name="gender" value="man"><b>man</b></label>
+          <label><input type="radio" name="gender" value="woman"><b>woman</b></label>
+        </div>
+        <div class="other_enter">
+          <input type="text" name="stature" id="stature" placeholder="input of stature [m]">
+          <input type="text" name="weight" id="weight" placeholder="input of weight [kg]">
+        </div>
+      </form>
+      <button id="calculate">start calculate</button>
+    </div>
+    
+    <!--------  BMI result page   --------------------->
+    <div class="BMI_result">
+      <!--------  MORE 30 MAN --------------------->
+      <div id="BMI_over30_man">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_30over_man.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>more diet</p>
+        </div>
+      </div>
+      <!--------  MORE 30 WOMAN --------------------->
+      <div id="BMI_over30_woman">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_30over_woman.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>more diet</p>
+        </div>
+      </div>
+      <!--------  18~30 MAN --------------------->
+      <div id="BMI_18_30_man">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_18-30_man.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>your healthy body</p>
+        </div>
+      </div>
+      <!--------  18~30 WOMAN --------------------->
+      <div id="BMI_18_30_woman">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_18-30_woman.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>your healthy body</p>
+        </div>
+      </div>
+      <!--------  18downward man --------------------->
+      <div id="BMI_18downward_man">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_18downward_man.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>more eat & exercise</p>
+        </div>
+      </div>
+      <!--------  18downward woman --------------------->
+      <div id="BMI_18downward_woman">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_18downward_woman.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>more eat & exercise</p>
+        </div>
+      </div>
+      <!--------  other & error --------------------->
+      <div id="BMI_otnher">
+        <p class="close_icon"><i class="fa fa-times" aria-hidden="true"></i></p>
+        <h3>BMI result</h3>
+        <div class="BMI_image_photo">
+          <img src="img/calculatie_BMI/BMI_other.jpg">
+        </div>
+        <div class="result_comment">
+          <p>your BMI</p>
+          <p class="result">aaa</p>
+          <p>Retry</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
