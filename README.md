@@ -24,7 +24,7 @@ jQueryにより計算後、結果ページをアニメーションで表示さ�
 |           └─ calculatie_BMI.css                            # CSSファイル（自身でコーディング）
 └─ js/
     └─ calculatie_BMI                                        # jsファイル保存フォルダー
-           └─ calculatie_BMI.js                             # jsファイル（自身でコーディング）   
+           └─ calculatie_BMI.js                              # jsファイル（自身でコーディング）   
 ```
 ## インストール方法
 1、全てのファイルをフォークし、ローカルにクローンを作成。  
@@ -52,16 +52,17 @@ Component file/
 ├─ jQuery_base                                               # folder of jQuery files.
 ├─ fonts                                                     # folder of web fonts.(saving in this folder at Font Awesome.)
 ├─ img                                                       # folder of images. 
-├─ calculatie_BMI.html                                 # Top page.（my coding）
+├─ calculatie_BMI.html                                       # Top page.（my coding）
 ├─ css/
-|   └─ calculatie_BMI                                  # folder of css(saving in this folder at css of Font Awesome.)
-|          └─ calculatie_BMI.css                       # file of top page css.（my coding）
+|   └─ calculatie_BMI                                        # folder of css(saving in this folder at css of Font Awesome.)
+|          ├─ img                                            # folder of images.（image of this folder enter to css.）
+|          └─ calculatie_BMI.css                             # file of top page css.（my coding）
 └─ js/
-    └─ calculatie_BMI                                  # folder of js.
-           └─ calculatie_BMI.js                       # file of top page js.(my coding)
+    └─ calculatie_BMI                                        # folder of js.
+           └─ calculatie_BMI.js                              # file of top page js.(my coding)
 ```
 ## Install
 1、all files do fork and this all files do clone in local.  
 2、this local files open to web browser.  
 ## URL of Demo site(URL of my portfolio site)
-[http://s-fukushima.sakura.ne.jp/Portfolio_20170701.html](http://s-fukushima.sakura.ne.jp/Portfolio_20170701.html "URL of my portfolio site")
+[http://s-fukushima.sakura.ne.jp/Portfolio_BMI_site.html](http://s-fukushima.sakura.ne.jp/Portfolio_BMI_site.html "URL of my portfolio site")
