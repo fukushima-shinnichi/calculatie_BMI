@@ -1,15 +1,15 @@
-# おしゃれなお花屋さん　サイト
+# BMI 算出　サイト
 ## 概要
-* HTML5,CSS3,jQueryを使用し作成した花屋のwebサイトになります
+* HTML5,CSS3,jQueryを使用し作成したBMI算出のwebサイトになります
 * レスポンシブル対応
 * ポートフォリオ用サイト
 ## 説明
 本サイトはポートフォリオ用の自分の技術を紹介するためのサイトになります。  
-フレームワーク無で花屋のサイトを作成してみました。  
-花屋のコンセプトとして、20~30代女性をターゲットにしたサイト作りとしました。  
-花の色どりを目立たせたく、サイトの背景、文字色はシンプル色合いにしました。  
-google Mapの埋込み、レスポンシブデザイン、jQueryを利用したアニメーションを追加してみました。  
-フリーですので必要な方はご自由に使用願います。  
+フレームワーク無でBMI算出のサイトを作成してみました。  
+身長と体重を入力する事でBMIが算出され、BMIの値によって結果の画像が切替わるサイトを作成しました。  
+javascriptの条件分岐式のよりBMIの値により結果画像を切替え、面白さを追加してみました。  
+jQueryにより計算後、結果ページをアニメーションで表示される仕組みにしてシンプルで見やすい構造にしました。  
+フリーですので必要な方はご自由に使用願います。  
 ## ファイルの構成
 ```
 ファイルの構成/
@@ -19,8 +19,9 @@ google Mapの埋込み、レスポンシブデザイン、jQueryを利用した�
 ├─ img                                                       # 画像保存フォルダー
 ├─ Flower_shop_Cutewmer.html                                 # トップページ（自身でコーディング）
 ├─ css/
-|    └─ Flower_shop_Cutewmer                                 # CSS保存フォルダー(Font Awesomeのcss保存)
-|           └─ Flower_shop_Cutewmer.css                      # CSSファイル（自身でコーディング）
+|    └─ Flower_shop_Cutewmer                                 # CSS保存フォルダー(Font Awesomeのcss保存)
+|           ├─ img                                           # 画像保存フォルダー（cssに埋込む用）
+|           └─ Flower_shop_Cutewmer.css                      # CSSファイル（自身でコーディング）
 └─ js/
     └─ Flower_shop_Cutewmer                                  # jsファイル保存フォルダー
            └─ Flower_shop_Cutewmer.css                       # jsファイル（自身でコーディング）   
@@ -29,7 +30,7 @@ google Mapの埋込み、レスポンシブデザイン、jQueryを利用した�
 1、全てのファイルをフォークし、ローカルにクローンを作成。  
 2、ローカルに保存したHTMLファイルをウェブブラウザで開く。  
 ## デモサイトURL（ポートフォリオURL）
-[http://s-fukushima.sakura.ne.jp/Portfolio_20170701.html](http://s-fukushima.sakura.ne.jp/Portfolio_20170701.html "ポートフォリオURL")
+[http://s-fukushima.sakura.ne.jp/Portfolio_BMI_site.html](http://s-fukushima.sakura.ne.jp/Portfolio_BMI_site.html "ポートフォリオURL")
 
 ***
 ***
